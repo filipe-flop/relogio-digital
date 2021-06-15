@@ -1,5 +1,5 @@
 -- Contador BCD a ser implementado no relógio digital
-entity contadorBCD2 is
+entity contadorBCD is
     port (
         clk      : in bit;                          
         rst      : in bit;                          
@@ -8,9 +8,9 @@ entity contadorBCD2 is
         fim      : out bit;
         contagem : buffer integer range 15 downto 0 
     );
-end contadorBCD2;
+end contadorBCD;
 
-architecture comportamento of contadorBCD2 is
+architecture comportamento of contadorBCD is
 begin
     process (clk, rst, en)
     begin
